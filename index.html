@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isobar — Live Weather Instruments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <header>
+    <div class="brand">
+      <div class="brand-mark"></div>
+      <div class="brand-name">Isobar</div>
+      <div class="brand-tag">Weather Instruments</div>
+    </div>
+
+    <div class="search-form">
+      <div class="search-field">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="cityInput" placeholder="Search a city..." />
+      </div>
+      <button id="searchBtn" onclick="handleSearch()">Search</button>
+    </div>
+  </header>
+
+  <div id="status"></div>
+
+  <div id="app">
+    <div class="empty-state" id="emptyState">
+      <div class="icon">☁</div>
+      <h2>Search for a city to begin</h2>
+      <div class="chip-row">
+        <div class="chip" onclick="quickSearch('Bhopal')">Bhopal</div>
+        <div class="chip" onclick="quickSearch('Delhi')">Delhi</div>
+        <div class="chip" onclick="quickSearch('Mumbai')">Mumbai</div>
+        <div class="chip" onclick="quickSearch('London')">London</div>
+        <div class="chip" onclick="quickSearch('New York')">New York</div>
+        <div class="chip" onclick="quickSearch('Tokyo')">Tokyo</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="history-section" id="historySection" style="display:none;">
+    <h3>Recently viewed</h3>
+    <div class="history-rail" id="historyRail"></div>
+  </div>
+
+  <footer>Data sourced from Open&#8209;Meteo &nbsp;·&nbsp; Updated on search</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
