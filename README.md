@@ -2,7 +2,7 @@
 
 **Isobar** is a modern, responsive weather dashboard featuring custom gauge instruments, real-time data fetching, and an elegant dark-theme interface.
 
-🚀 **Live Demo:** [https://piyushrj9260-glitch.github.io/weather/](https://piyushrj9260-glitch.github.io/weather/)
+🚀 **Live Demo:** [https://piyushrj9260-glitch.github.io/weather/]([https://piyushrj9260-glitch.github.io/weather/](https://piyushrj9260-glitch.github.io/weather-webApp/))
 
 ---
 
